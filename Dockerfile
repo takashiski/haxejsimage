@@ -111,9 +111,4 @@ RUN set -ex \
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash - \
 	&& apt-get install -y nodejs
 
-RUN haxelib install hxnodejs 12.1.0 \
-	&& haxelib install extype 3.1.0 \
-	&& haxelib install buddy \
-	&& haxelib install utest
-
 CMD ["haxe"]
